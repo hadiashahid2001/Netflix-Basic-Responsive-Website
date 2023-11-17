@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NetFlix</title>
+        <!-- --------------------------------- Font CDN Link ----------------------------------- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" 
+    integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+       
+        <!-- --------------------------------- Custom and Responsive CSS Link ------------------------------------ -->
+    <link rel="stylesheet" href="cssFile/NetFlix_Style.css">
+    <link rel="stylesheet" href="cssFile/NetFlix_responsiveStyle.css">
+</head>
+<body data-bs-spy="scroll">
+
+        <!-- ################################# NavBar Design ################################### -->
+    <header>
+        <a href="#" class="logo"><img src="images/logo.png" alt="logo"></a>
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">TV Shows</a></li>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">Latest</a></li>
+            <li><a href="#">My List</a></li>
+        </ul>
+        <div class="search">
+            <input type="search" placeholder="Latest TV Shows">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
+    </header>
+
+    <!-- ################################# Banner Design ################################### -->
+    <div class="banner">
+        <img src="images/bg.jpg" alt="banner img" class="banner-img">
+        <div class="content">
+            <img src="images/name.png" alt="" class="movietitle">
+            <h4>
+                <span>2020</span>
+                <span><i>12+</i></span>
+                <span>1h 55min</span>
+                <span>Action</span>
+            </h4>
+            <p>Anyone can run a node by simply downloading the transaction history of a blockchain. 
+                Many crypto and blockchain enthusiasts are running nodes voluntarily.
+                They do this to contribute to a blockchains community, its development, security and integrity, but also simply 
+                because its their hobby and makes them feel part of the project.
+            </p>
+
+            <div class="buttons">
+                <a href="#"><i class="fa fa-play" aria-hidden="true"></i> Play</a>
+                <a href="#"><i class="fa fa-plus" aria-hidden="true"></i> My List</a>
+            </div>
+        </div>
+
+        <a class="play" onclick="toggleVideo();"><img src="images/play.png" alt="">Watch Trailer</a>
+
+    </div>
+
+    <div class="trailer">
+        <video src="videos/pexels_videos_4703 (1080p).mp4" type="video/mp4" controls="true" autoplay="true"></video>
+        <img src="images/close.png" alt="" class="close" onclick="toggleVideo();">
+    </div>
+        <!-- --------------------------------- JS File Link ---------------------------------- -->
+    <script src="jsFile/NetFlix_main.js"></script>
+</body>
+</html>
